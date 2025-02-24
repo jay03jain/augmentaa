@@ -40,17 +40,17 @@
         <h1 class="sitename">Augmentaa</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" >
         <ul>
           <li><a href="index.html">Home<br></a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
+          <a class="btn-getstarted" href="contact.html" style="margin-left: 10px;"class="active">Contact Us</a>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="contact.html" class="active">Contact Us</a>
 
     </div>
   </header>
@@ -77,7 +77,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5739489296784!2d76.99102392547759!3d28.46225699179272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d179ddbb26577%3A0xfa1e939704963c72!2sWings%20Apartment%2C%20Bhawani%20Enclave%2C%20Sector%209%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1739981381646!5m2!1sen!2sin" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238613.4391241276!2d76.81771344136997!3d28.421350117847652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1740410335252!5m2!1sen!2sin" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -86,57 +86,51 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>Wings apartment Sector-9, Gurugram India</p>
+                <h3>Delhi-NCR</h3>
+                <p> Manish Rai - +91 84481 01155</p>
+                <p>Manish.rai@augmentaa.in</p>
               </div>
             </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+91 95605-02700</p>
+                <h3>Jaipur</h3>
+                <p>Amit chaturvedi - +91 99103 22240</p>
+                <p>Amit.chaturvedi@augmentaa.co.in</p>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+            </div>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
+                <h3>Rest India</h3>
+                <p> Deepak Jain - +91 95605 02700</p>
                 <p>Deepak.jain@augmentaa.co.in</p>
               </div>
-            </div><!-- End Info Item -->
-
+            </div>
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" class="php-email-form">
               <div class="row gy-4">
-
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-md-6">
+                  <input type="email" id="email" class="form-control" placeholder="Your Email" required>
                 </div>
-
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" id="subject" class="form-control" placeholder="Subject" required>
                 </div>
-
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea id="message" class="form-control" rows="6" placeholder="Message" required></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
           </div><!-- End Contact Form -->
@@ -152,38 +146,29 @@
   <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+      <div class="row gy-2">
+        <div class="col-lg-5 col-md-12 footer-about" >
+          <a href="index.html" class="logo d-flex align-item-center">
             <span class="sitename">Augmentaa</span>
           </a>
-          <p>Empowering the future of mobility through cutting-edge technology and robust infrastructure.</p>
+          <p >Empowering the future of mobility through cutting-edge technology and robust infrastructure.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/AugmentaaD9318?t=tr8JfWh-Of6RFS85UZQ-bA&s=08"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/14vKC4ajAV/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/@augmentaadigital"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/augmentaa-digital-services/"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div  class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
-          <ul>
+          <ul >
             <li><a href="/">Home</a></li>
             <li><a href="/about.html">About us</a></li>
             <li><a href="/services.html">Services</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4 style="  margin-left: 100px;">Contact Us</h4>
-          <p>Wings apartment, Sector-9</p>
-          <p>Gurugram , haryana 122001</p>
-          <p>India</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+91- 9560502700</span></p>
-          <p><strong>Email:</strong> <span>  Deepak.jain@augmentaa.co.in  Manish.rai@augmentaa.co.in</span></p>
         </div>
 
       </div>
@@ -211,7 +196,29 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+  <script>
+    (function() {
+      emailjs.init("cTpn0V0RZogfiTuUI"); // Replace with your EmailJS user ID
+  
+      document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+  
+        emailjs.send("service_ifbro1j", "template_1ilpjhr", {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value
+        }).then(function(response) {
+          document.querySelector(".sent-message").style.display = "block";
+        }, function(error) {
+          document.querySelector(".error-message").innerText = "Error: " + error.text;
+        });
+      });
+    })();
+  </script>
 </body>
 
 </html>

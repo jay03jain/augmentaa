@@ -404,6 +404,7 @@ h6 {
   .navmenu {
     padding: 0;
     z-index: 9997;
+
   }
 
   .navmenu ul {
@@ -526,7 +527,24 @@ h6 {
   font-size: 14px;
   position: relative;
 }
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  footer .d-flex {
+    justify-content: center;
+  }
 
+  footer li {
+    text-align: center;
+    display: block!important;
+  }
+  .footer-links{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 30px;
+  }
+}
 .footer .footer-top {
   padding-top: 50px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -535,6 +553,7 @@ h6 {
 .footer .footer-about .logo {
   line-height: 1;
   margin-bottom: 25px;
+
 }
 
 .footer .footer-about .logo img {
@@ -583,7 +602,7 @@ h6 {
 
 .footer .footer-links {
   margin-bottom: 30px;
-  margin-left: 100px;
+  margin-left: auto;
 }
 
 .footer .footer-links ul {
@@ -2033,3 +2052,5 @@ section,
   50% { box-shadow: 0 0 20px rgba(72, 187, 120, 0.8); }
   100% { box-shadow: 0 0 10px rgba(72, 187, 120, 0.4); }
 }
+
+
